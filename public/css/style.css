@@ -1,0 +1,238 @@
+
+
+/*----body con imagen----*/
+body {
+  background-image: url("../images/dark-silver-metallic-triangle-patterned-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Sarala", sans-serif;
+  padding-bottom: 4rem;
+  backdrop-filter: blur(1px);
+ 
+}
+
+/*----navbar boostrap modificado----*/
+#nav {
+  backdrop-filter: blur(2px) !important;
+  background: rgba(0, 0, 0, 0.445) !important;
+  box-shadow: 0px 1px 20px 20px rgba(0, 0, 0, 0.329) !important;
+  font-size: x-large;
+
+}
+
+/*-----footer-------*/
+footer {
+  position:fixed;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  padding-top: 0.7rem;
+  margin-top: auto;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 20px 20px rgba(0, 0, 0, 0.329);
+}
+footer ul {
+  display: flex;
+}
+footer li a {
+  font-size: large;
+  color: rgba(240, 248, 255, 0.705);
+  margin-left: 1rem;
+}
+footer div div div h4 {
+  color: rgba(240, 248, 255, 0.363);
+}
+footer div div div {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*-------contact--------*/
+.contenedorContacto  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  align-items: center;
+}
+.formContact p {
+  color: rgba(32, 4, 4, 0.74);
+  margin-top: -30px;
+}
+.formContact {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.445) ;
+  border-radius: 40px 0px;
+}
+label {
+  color: aliceblue;
+}
+::placeholder {
+  color: rgba(240, 248, 255, 0.712);
+}
+.inputContact {
+  margin-bottom: 1rem;
+  border: 0;
+  border-bottom: solid 2px white;
+  background: rgba(0, 0, 0, 0.438);
+  outline: none;
+  color: rgb(252, 247, 247);
+}
+.texteareaLogin {
+  margin: 0.5rem 0;
+  height: 8rem;
+  background: none;
+  box-shadow: 2px 2px 5px black;
+  outline: none;
+  color: rgb(252, 247, 247);
+}
+#contactXcuatro {
+  margin-top: 2rem;
+  max-width: 31rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+#contactXcuatro div {
+  color: aliceblue;
+  display: flex;
+  margin: 0.6rem;
+  width: 14rem;
+  height: 14rem;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.445) ;
+  border-radius: 40px 0px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-------login--------*/
+
+.formLogin {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  max-width: 19rem;
+  min-width: 15rem;
+  padding: 1.5rem;
+  margin: auto;
+  margin-top: 3rem;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.445);
+ 
+  border-radius: 40px 0px;
+}
+.inputLogin {
+  margin-bottom: 1rem;
+  border: 0;
+  border-bottom: solid 2px white;
+  background: rgba(0, 0, 0, 0.438);
+  outline: none;
+  color: rgb(252, 247, 247);
+}
+/*-------secret--------*/
+.contenedorSecret {
+
+  display: flex;
+  flex-direction: column;
+  font-family: 'Monda', sans-serif;
+}
+#cambiar{
+  border-radius: 0px 20px 20px 0px;
+  width: 5rem;
+}
+#borrar{
+  border-radius:20px 0px 0px 20px;
+  width: 5rem;
+}
+/*-------INDEX--------*/
+#index h1{
+  font-family: 'Monoton', cursive;
+  background-color: rgba(0, 0, 0, 0.589);
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+  border: solid 1px white;
+
+}
+.index-div{
+  backdrop-filter: blur(8px);
+ 
+}
+.index-div h2{
+border-radius: 1rem;
+}
+
+#index{
+  backdrop-filter: blur(2px);
+  background-image: url("../images/huella2.png");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100vw;
+  display: flex;
+  
+}
+/*-------RESPONSIVE--------*/
+
+@media only screen and (max-width: 755px) {
+  #table{
+    margin: 5px !important;
+  }
+  #cambiar{
+    border-radius: 0px 20px 20px 0px;
+    width: 4rem;
+    height: 2rem;
+    font-size: 1px;
+  }
+  #borrar{
+    border-radius: 20px 0px 0px 20px;
+    width: 4rem;
+    height: 2rem;
+    font-size: 1px;
+  }
+ 
+}
+@media only screen and (max-width: 630px) {
+  #cambiar{
+    border-radius: 0px 0px 10px 10px;
+    width: 3rem;
+    height: 2rem;
+    font-size: 0.5px;
+  }
+  #borrar{
+    border-radius: 10px 10px 0px 0px;
+    width: 3rem;
+    height: 2rem;
+    font-size: 0.5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer div div div h4 {
+    display: none;
+  }
+  .formContact {
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .contenedorContacto  {
+  flex-direction: column-reverse;
+ 
+}
+  
+}

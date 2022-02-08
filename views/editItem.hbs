@@ -1,0 +1,52 @@
+
+<div class="bg-black  bg-gradient d-flex align-items-center  h-100 vh-100">
+
+
+    <div class="m-auto p-3  bg-dark bg-gradient text-white">
+        <div class="col-12 ">
+            <h2 class="text-warning">EDITAR CALZADO</h2>
+            <form class="text-white" action="/secret/editProduct" method="POST" enctype="multipart/form-data">
+                <input type="text" name="id" value="{{product.id}}" hidden />
+                <div class="mb-3">
+                    <label for="tipo" class="form-label">tipo</label>
+                    <input type="text" class="form-control" id="tipo" name="tipo" value="{{product.tipo}}" required />
+                </div>
+                <div class="mb-3">
+                    <label for="color" class="form-label">Color</label>
+                    <input type="text" class="form-control" id="color" name="color" value="{{product.color}}"
+                        required />
+                </div>
+                <div class="mb-3">
+                    <label for="talle" class="form-label">Talle</label>
+                    <input type="number" class="form-control" id="talle" name="talle" value="{{product.talle}}"
+                        required />
+                </div>
+                <div class="mb-3">
+                    <label for="stock" class="form-label">Stock</label>
+                    <input type="number" class="form-control" id="stock" name="stock" value="{{product.stock}}"
+                        required />
+
+                <div><img src="{{dataCalzados}}" alt=""></div>
+                    {{!-- utilizamos un input oculto para enviar el valor de la propiedad image en caso de que no haya
+                    cambios en
+                    el campo relativo a la imagen... en ese caso, seguirá siendo la misma. --}}
+                    <input type="text" value={{product.imagen}} name="prevImage" hidden>
+
+                </div>
+                <div class="mb-3">
+                    <label for="imageFile" class="form-label">Imagen</label>
+                    <input type="file" class="form-control" id="imageFile" name="imageFile"
+                        value="{{product.imagen}}" />
+                </div>
+
+                <input type="submit" value="Cambiar" class="btn btn-primary" />
+                <a href="/secret/deleteProduct/{{product.id}}"><input type="button" value="Borrar" class="btn btn-danger"
+                        required /></a>
+                <a href="/secret"><input type="button" value="Cancelar" class="btn btn-secondary" /></a>
+            </form>
+            
+        </div>
+    </div>
+
+
+</div>

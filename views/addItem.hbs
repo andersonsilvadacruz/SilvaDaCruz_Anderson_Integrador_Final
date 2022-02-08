@@ -1,0 +1,35 @@
+
+    <div class="bg-black bg-gradient  d-flex align-items-center  h-100 vh-100">
+        <div class="m-auto p-3  bg-dark bg-gradient text-white">
+            <div class=" col-12 ">
+                <h2 class="text-white">AGREGAR CALZADO</h2>
+                <form class=" text-white" action="/secret/addItem" method="POST" enctype="multipart/form-data">
+
+                    <div class="mb-3">
+                        <label for="tipo" class="form-label">tipo</label>
+                        <input type="text" class="form-control" id="tipo" name="tipo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="color" class="form-label">Color</label>
+                        <input type="text" class="form-control" id="color" name="color" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="talle" class="form-label">Talle</label>
+                        <input type="number" class="form-control" id="talle" name="talle" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="stock" class="form-label">Stock</label>
+                        <input type="number" class="form-control" id="stock" name="stock" required>
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="imageFile" class="form-label">Imagen</label>
+                        <input type="file" class="form-control" id="imageFile" name="imageFile" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                    <a href="/secret"><input type="button" value="Cancelar" class="btn btn-secondary"></a>
+                </form>
+            </div>
+        </div>
+    </div>
